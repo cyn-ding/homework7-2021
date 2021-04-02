@@ -51,6 +51,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip Ahead");
 	if (video.currentTime > 15){
+		video.loop= true;
 		video.currentTime = video.currentTime + 15;
 		console.log(video.currentTime)
 	} else {
@@ -58,7 +59,6 @@ document.querySelector("#skip").addEventListener("click", function() {
 		video.currentTime = video.currentTime + 15;
 		console.log(video.currentTime)
 	}
-	// video.currentTime = video.currentTime + 15;
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
