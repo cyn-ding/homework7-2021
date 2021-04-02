@@ -52,12 +52,15 @@ document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip Ahead");
 	if (video.currentTime > 15){
 		video.loop= true;
+		console.log("Original location "+video.currentTime)
 		video.currentTime = video.currentTime + 15;
-		console.log(video.currentTime)
+		console.log("New location "+video.currentTime)
 	} else {
 		video.currentTime=0
+		console.log("Original location "+video.currentTime)
 		video.currentTime = video.currentTime + 15;
 		console.log(video.currentTime)
+		console.log("New location "+video.currentTime)
 	}
 });
 
