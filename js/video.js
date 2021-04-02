@@ -50,7 +50,15 @@ document.querySelector("#mute").addEventListener("click", function() {
 
 document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip Ahead");
-	video.currentTime(video.currentTime() + 10);
+	if (video.currentTime > 15){
+		video.currentTime = video.currentTime + 15;
+		console.log(video.currentTime)
+	} else {
+		video.currentTime=0
+		video.currentTime = video.currentTime + 15;
+		console.log(video.currentTime)
+	}
+	// video.currentTime = video.currentTime + 15;
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
