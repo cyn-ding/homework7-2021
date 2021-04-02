@@ -56,7 +56,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 		video.currentTime = video.currentTime + 15;
 		console.log("New location "+video.currentTime)
 	} else {
-		video.currentTime=0
+		// video.currentTime=0
 		console.log("Original location "+video.currentTime)
 		video.currentTime = video.currentTime + 15;
 		console.log(video.currentTime)
