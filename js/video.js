@@ -40,9 +40,11 @@ document.querySelector("#slider").addEventListener("click", function() {
 document.querySelector("#mute").addEventListener("click", function() {
 	console.log("Mute Video");
 	if (video.muted === false){
-		video.muted=true;
+		video.muted=true
+		document.querySelector("#mute").innerHTML="Unmute";
 	} else {
-		video.muted=false;
+		video.muted=false
+		document.querySelector("#mute").innerHTML="Mute";
 	}
 });
 
